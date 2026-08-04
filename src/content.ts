@@ -159,9 +159,9 @@ export const content: Record<Lang, Content> = {
 		},
 		hero: {
 			eyebrow: 'Software Engineer',
-			heading: ['Construyendo con cuidado', 'productos de software', 'que a la gente le encanta usar.'],
+			heading: ['Creo software', 'cuidado al detalle', 'que a la gente le encanta usar.'],
 			paragraph:
-				'Me importan los detalles que hacen que el software se sienta sólido — desde sacar nuevas funcionalidades hasta que todo siga funcionando bien en producción, siempre pensando en quién lo usa.',
+				'Cuido los detalles que hacen que el software funcione de verdad bien: desde sacar nuevas funcionalidades hasta mantenerlo estable en producción, siempre pensando en quien lo usa.',
 			viewProjects: 'Ver Proyectos',
 			githubCta: 'GitHub ↗',
 			card: {
@@ -217,7 +217,7 @@ export const content: Record<Lang, Content> = {
 			paragraphs: [
 				'Soy Software Engineer y me apasiona construir productos que resuelvan problemas reales. Me gusta estar implicada de principio a fin: entender lo que necesitan los usuarios, sacar adelante nuevas funcionalidades y mantenerme cerca del código a través de revisiones, releases y soporte en producción.',
 				'Lo que más me motiva es crear software útil, mantenible y agradable de usar, colaborando de cerca con Producto y Diseño para encontrar la solución más simple que aporte valor real. También me apasiona automatizar tareas repetitivas: he creado herramientas internas y flujos de trabajo con IA para que el equipo se centre en lo que realmente importa.',
-				'Fuera del trabajo, me encanta leer, el cine y las series. Soy una persona organizada, buena trabajando en equipo y eficiente en lo que hago.',
+				'Fuera del trabajo, me encanta leer, el cine y las series. Soy organizada, trabajo bien en equipo y soy eficiente en lo que hago.',
 			],
 		},
 		experience: {
@@ -225,7 +225,7 @@ export const content: Record<Lang, Content> = {
 			role: 'Software Engineer',
 			meta: 'Signaturit · 2021 — Presente',
 			description:
-				'En el día a día eso significa sacar funcionalidades adelante, revisar pull requests, cuidar que los releases salgan bien y estar ahí cuando producción lo necesita — además de automatizar lo repetitivo con herramientas internas y flujos de trabajo con IA.',
+				'En el día a día eso significa sacar adelante nuevas funcionalidades, revisar pull requests, cuidar que los releases salgan bien y estar ahí cuando producción lo necesita, además de automatizar lo repetitivo con herramientas internas y flujos de trabajo con IA.',
 		},
 		stack: {
 			heading: 'Stack Tecnológico',
@@ -242,9 +242,9 @@ export const content: Record<Lang, Content> = {
 		},
 		hero: {
 			eyebrow: 'Software Engineer',
-			heading: ['Construint', 'productes', 'que la gent gaudeixi fent servir.'],
+			heading: ['Creant', 'Apps', 'que a la gent li encanta fer servir.'],
 			paragraph:
-				'Construeixo productes digitals de principi a fi, des de les noves funcionalitats fins al suport en producció, sempre buscant aportar valor i crear experiències que la gent gaudeixi fent servir.',
+				"Cuido els detalls que fan que el programari funcioni de veritat bé: des de desenvolupar noves funcionalitats fins a mantenir-lo estable en producció, sempre pensant en qui l'utilitza.",
 			viewProjects: 'Veure Projectes',
 			githubCta: 'GitHub ↗',
 			card: {
@@ -301,7 +301,7 @@ export const content: Record<Lang, Content> = {
 				"Sóc Software Engineer i m'apassiona construir productes que resolguin problemes reals. Participo en tot el cicle de vida del producte: des d'entendre les necessitats dels usuaris i desenvolupar noves funcionalitats fins a revisar codi, validar releases i donar suport a producció.",
 
 				"El que més em motiva és crear aplicacions útils, mantenibles i amb bona usabilitat. M'agrada treballar amb Producte i Disseny per trobar solucions senzilles que aportin valor real. També gaudeixo automatitzant tasques repetitives i construint eines internes i fluxos de treball amb IA que permetin a l'equip centrar-se en allò que realment importa.",
-				"Fora de la feina, m'encanta llegir, el cinema i les sèries. Sóc una persona organitzada, bona treballant en equip i eficient en el que faig.",
+				"Fora de la feina, m'encanta llegir, el cinema i les sèries. Sóc organitzada, treballo bé en equip i sóc eficient en el que faig.",
 			],
 		},
 		experience: {
@@ -309,7 +309,7 @@ export const content: Record<Lang, Content> = {
 			role: 'Software Engineer',
 			meta: 'Signaturit · 2021 — Actualitat',
 			description:
-				"En el dia a dia això vol dir treure funcionalitats endavant, revisar pull requests, tenir cura que els releases surtin bé i ser-hi quan producció ho necessita — a més d'automatitzar allò repetitiu amb eines internes i fluxos de treball amb IA.",
+				"En el dia a dia això vol dir treure endavant noves funcionalitats, revisar pull requests, tenir cura que els releases surtin bé i ser-hi quan producció ho necessita, a més d'automatitzar allò repetitiu amb eines internes i fluxos de treball amb IA.",
 		},
 		stack: {
 			heading: 'Stack Tecnològic',
