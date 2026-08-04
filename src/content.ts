@@ -79,7 +79,7 @@ export const content: Record<Lang, Content> = {
 			eyebrow: 'Software Engineer',
 			heading: ['Thoughtfully building', 'software products', 'people love using.'],
 			paragraph:
-				'I care about the details that make software feel solid — from shipping new features to keeping things running smoothly in production, always with real users in mind.',
+				'I care about the details that make software feel solid, from shipping new features to keeping things running smoothly in production, always with real users in mind.',
 			viewProjects: 'View Projects',
 			githubCta: 'GitHub ↗',
 			card: {
@@ -108,7 +108,7 @@ export const content: Record<Lang, Content> = {
 				},
 				{
 					title: 'Movie Quest',
-					description: 'A movie guessing game — figure out the film from a series of clues.',
+					description: 'A movie guessing game: figure out the film from a series of clues.',
 					tech: ['React', 'Redux Toolkit', 'i18next'],
 					github: 'https://github.com/anionce/movie-quest',
 					image: movieQuestImage,
@@ -132,16 +132,17 @@ export const content: Record<Lang, Content> = {
 		about: {
 			heading: 'About',
 			paragraphs: [
-				"I'm a Software Engineer who's passionate about building products that solve real problems. I like being involved end to end — understanding what users actually need, shipping new features, and staying close to the codebase through code reviews, releases and production support.",
-				"What drives me is creating software that's useful, maintainable and pleasant to use, working closely with Product and Design to find the simplest solution that delivers real value. I'm also big on automating repetitive work — I've built internal tools and AI-assisted workflows to help the team focus on what actually matters.",
+				"I'm a Software Engineer who's passionate about building products that solve real problems. I like being involved end to end: understanding what users actually need, shipping new features, and staying close to the codebase through code reviews, releases and production support.",
+				"What drives me is creating software that's useful, maintainable and pleasant to use, working closely with Product and Design to find the simplest solution that delivers real value. I'm also big on automating repetitive work: I've built internal tools and AI-assisted workflows to help the team focus on what actually matters.",
+				"Outside of work, I love reading, films and TV series. I'm organized, a strong team player, and efficient in how I work.",
 			],
 		},
 		experience: {
 			heading: 'Experience',
 			role: 'Software Engineer',
-			meta: 'Signaturit · 2021 — Present',
+			meta: 'Signaturit · 2021–Present',
 			description:
-				'Day to day that means shipping features, reviewing pull requests, keeping releases smooth and jumping in when production needs support — plus automating the repetitive parts with internal tools and AI-assisted workflows.',
+				'Day to day that means shipping features, reviewing pull requests, keeping releases smooth and jumping in when production needs support, plus automating the repetitive parts with internal tools and AI-assisted workflows.',
 		},
 		stack: {
 			heading: 'Tech Stack',
@@ -216,6 +217,7 @@ export const content: Record<Lang, Content> = {
 			paragraphs: [
 				'Soy Software Engineer y me apasiona construir productos que resuelvan problemas reales. Me gusta estar implicada de principio a fin: entender lo que necesitan los usuarios, sacar adelante nuevas funcionalidades y mantenerme cerca del código a través de revisiones, releases y soporte en producción.',
 				'Lo que más me motiva es crear software útil, mantenible y agradable de usar, colaborando de cerca con Producto y Diseño para encontrar la solución más simple que aporte valor real. También me apasiona automatizar tareas repetitivas: he creado herramientas internas y flujos de trabajo con IA para que el equipo se centre en lo que realmente importa.',
+				'Fuera del trabajo, me encanta leer, el cine y las series. Soy una persona organizada, buena trabajando en equipo y eficiente en lo que hago.',
 			],
 		},
 		experience: {
@@ -299,6 +301,7 @@ export const content: Record<Lang, Content> = {
 				"Sóc Software Engineer i m'apassiona construir productes que resolguin problemes reals. Participo en tot el cicle de vida del producte: des d'entendre les necessitats dels usuaris i desenvolupar noves funcionalitats fins a revisar codi, validar releases i donar suport a producció.",
 
 				"El que més em motiva és crear aplicacions útils, mantenibles i amb bona usabilitat. M'agrada treballar amb Producte i Disseny per trobar solucions senzilles que aportin valor real. També gaudeixo automatitzant tasques repetitives i construint eines internes i fluxos de treball amb IA que permetin a l'equip centrar-se en allò que realment importa.",
+				"Fora de la feina, m'encanta llegir, el cinema i les sèries. Sóc una persona organitzada, bona treballant en equip i eficient en el que faig.",
 			],
 		},
 		experience: {
