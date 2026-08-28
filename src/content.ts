@@ -77,9 +77,9 @@ export const content: Record<Lang, Content> = {
 		},
 		hero: {
 			eyebrow: 'Software Engineer',
-			heading: ['Thoughtfully building', 'software products', 'people love using.'],
+			heading: ['Building apps', 'that are useful,', 'usable and beautiful.'],
 			paragraph:
-				'I care about the details that make software feel solid, from shipping new features to keeping things running smoothly in production, always with real users in mind.',
+				"I care about the details: building features that work well, feel good to use, and hold up once they hit production, always with real users in mind.",
 			viewProjects: 'View Projects',
 			githubCta: 'GitHub ↗',
 			card: {
@@ -101,28 +101,28 @@ export const content: Record<Lang, Content> = {
 			items: [
 				{
 					title: 'Cala',
-					description: 'Personal finance dashboard to track expenses, budgets and savings.',
+					description: 'A personal finance dashboard for tracking expenses, budgets and savings.',
 					tech: ['React', 'TypeScript', 'Firebase'],
 					github: 'https://github.com/anionce/anafinance',
 					image: calaImage,
 				},
 				{
 					title: 'Movie Quest',
-					description: 'A movie guessing game: figure out the film from a series of clues.',
+					description: 'Guess the movie from a series of clues before you run out of guesses.',
 					tech: ['React', 'Redux Toolkit', 'i18next'],
 					github: 'https://github.com/anionce/movie-quest',
 					image: movieQuestImage,
 				},
 				{
 					title: 'Film Roulette',
-					description: 'Discover what to watch next with personalized, randomized movie recommendations.',
+					description: 'Spin up a random, personalized movie recommendation for your next watch.',
 					tech: ['React', 'Redux Toolkit', 'MUI'],
 					github: 'https://github.com/anionce/film-roulette',
 					image: filmRouletteImage,
 				},
 				{
 					title: 'Next Chapter',
-					description: 'Get book picks tailored to your mood, genre, length and favorite themes.',
+					description: 'Book recommendations tailored to your mood, genre, length and favorite themes.',
 					tech: ['React', 'TanStack Query', 'Tailwind CSS'],
 					github: 'https://github.com/anionce/next-chapter',
 					image: nextChapterImage,
@@ -142,7 +142,7 @@ export const content: Record<Lang, Content> = {
 			role: 'Software Engineer',
 			meta: 'Signaturit · 2021–Present',
 			description:
-				'Day to day that means shipping features, reviewing pull requests, keeping releases smooth and jumping in when production needs support, plus automating the repetitive parts with internal tools and AI-assisted workflows.',
+				'Day to day that means shipping features, reviewing pull requests, keeping releases smooth, and jumping in whenever production needs support.',
 		},
 		stack: {
 			heading: 'Tech Stack',
@@ -159,9 +159,9 @@ export const content: Record<Lang, Content> = {
 		},
 		hero: {
 			eyebrow: 'Software Engineer',
-			heading: ['Creo software', 'cuidado al detalle', 'que a la gente le encanta usar.'],
+			heading: ['Creando apps', 'útiles, usables', 'y bonitas.'],
 			paragraph:
-				'Cuido los detalles que hacen que el software funcione de verdad bien: desde sacar nuevas funcionalidades hasta mantenerlo estable en producción, siempre pensando en quien lo usa.',
+				'Cuido los detalles: que las funcionalidades funcionen bien, sean fáciles de usar y aguanten en producción, siempre pensando en quien las usa.',
 			viewProjects: 'Ver Proyectos',
 			githubCta: 'GitHub ↗',
 			card: {
@@ -190,15 +190,14 @@ export const content: Record<Lang, Content> = {
 				},
 				{
 					title: 'Movie Quest',
-					description: 'Juego para adivinar películas a partir de una serie de pistas.',
+					description: 'Adivina la película a partir de una serie de pistas antes de quedarte sin intentos.',
 					tech: ['React', 'Redux Toolkit', 'i18next'],
 					github: 'https://github.com/anionce/movie-quest',
 					image: movieQuestImage,
 				},
 				{
 					title: 'Film Roulette',
-					description:
-						'Descubre qué ver a continuación con recomendaciones de películas aleatorias y personalizadas.',
+					description: 'Descubre qué ver con una recomendación de película al azar, hecha a tu medida.',
 					tech: ['React', 'Redux Toolkit', 'MUI'],
 					github: 'https://github.com/anionce/film-roulette',
 					image: filmRouletteImage,
@@ -225,7 +224,7 @@ export const content: Record<Lang, Content> = {
 			role: 'Software Engineer',
 			meta: 'Signaturit · 2021 — Presente',
 			description:
-				'En el día a día eso significa sacar adelante nuevas funcionalidades, revisar pull requests, cuidar que los releases salgan bien y estar ahí cuando producción lo necesita, además de automatizar lo repetitivo con herramientas internas y flujos de trabajo con IA.',
+				'En el día a día eso significa sacar adelante nuevas funcionalidades, revisar pull requests, cuidar que los releases salgan bien y estar ahí cuando producción lo necesita.',
 		},
 		stack: {
 			heading: 'Stack Tecnológico',
@@ -242,9 +241,9 @@ export const content: Record<Lang, Content> = {
 		},
 		hero: {
 			eyebrow: 'Software Engineer',
-			heading: ['Creant', 'Apps', 'que a la gent li encanta fer servir.'],
+			heading: ['Creant apps', 'útils, usables', 'i boniques.'],
 			paragraph:
-				"Cuido els detalls que fan que el programari funcioni de veritat bé: des de desenvolupar noves funcionalitats fins a mantenir-lo estable en producció, sempre pensant en qui l'utilitza.",
+				"Cuido els detalls: que les funcionalitats funcionin bé, siguin fàcils d'utilitzar i aguantin en producció, sempre pensant en qui les fa servir.",
 			viewProjects: 'Veure Projectes',
 			githubCta: 'GitHub ↗',
 			card: {
@@ -273,15 +272,14 @@ export const content: Record<Lang, Content> = {
 				},
 				{
 					title: 'Movie Quest',
-					description: "Joc per endevinar pel·lícules a partir d'una sèrie de pistes.",
+					description: "Endevina la pel·lícula a partir d'una sèrie de pistes abans de quedar-te sense intents.",
 					tech: ['React', 'Redux Toolkit', 'i18next'],
 					github: 'https://github.com/anionce/movie-quest',
 					image: movieQuestImage,
 				},
 				{
 					title: 'Film Roulette',
-					description:
-						'Descobreix què veure a continuació amb recomanacions de pel·lícules aleatòries i personalitzades.',
+					description: "Descobreix què veure amb una recomanació de pel·lícula a l'atzar, feta a mida.",
 					tech: ['React', 'Redux Toolkit', 'MUI'],
 					github: 'https://github.com/anionce/film-roulette',
 					image: filmRouletteImage,
@@ -300,7 +298,7 @@ export const content: Record<Lang, Content> = {
 			paragraphs: [
 				"Sóc Software Engineer i m'apassiona construir productes que resolguin problemes reals. Participo en tot el cicle de vida del producte: des d'entendre les necessitats dels usuaris i desenvolupar noves funcionalitats fins a revisar codi, validar releases i donar suport a producció.",
 
-				"El que més em motiva és crear aplicacions útils, mantenibles i amb bona usabilitat. M'agrada treballar amb Producte i Disseny per trobar solucions senzilles que aportin valor real. També gaudeixo automatitzant tasques repetitives i construint eines internes i fluxos de treball amb IA que permetin a l'equip centrar-se en allò que realment importa.",
+				"El que més em motiva és crear programari útil, mantenible i agradable d'utilitzar, treballant molt a prop de Producte i Disseny per trobar la solució més senzilla que aporti valor real. També m'apassiona automatitzar tasques repetitives: he creat eines internes i fluxos de treball amb IA perquè l'equip es pugui centrar en el que realment importa.",
 				"Fora de la feina, m'encanta llegir, el cinema i les sèries. Sóc organitzada, treballo bé en equip i sóc eficient en el que faig.",
 			],
 		},
@@ -309,7 +307,7 @@ export const content: Record<Lang, Content> = {
 			role: 'Software Engineer',
 			meta: 'Signaturit · 2021 — Actualitat',
 			description:
-				"En el dia a dia això vol dir treure endavant noves funcionalitats, revisar pull requests, tenir cura que els releases surtin bé i ser-hi quan producció ho necessita, a més d'automatitzar allò repetitiu amb eines internes i fluxos de treball amb IA.",
+				"En el dia a dia això vol dir treure endavant noves funcionalitats, revisar pull requests, tenir cura que els releases surtin bé i ser-hi quan producció ho necessita.",
 		},
 		stack: {
 			heading: 'Stack Tecnològic',
