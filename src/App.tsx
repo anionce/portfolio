@@ -23,6 +23,25 @@ const stackItems = [
 	'Figma',
 ];
 
+const SUBSTACK_URL = 'https://themisstery.substack.com/';
+const SUBSTACK_LABEL = 'the misstery diaries';
+
+function withSubstackLink(text: string) {
+	const parts = text.split(SUBSTACK_LABEL);
+	if (parts.length === 1) return text;
+
+	return parts.flatMap((part, index) =>
+		index === 0
+			? [part]
+			: [
+					<a key={index} className='substack-link' href={SUBSTACK_URL} target='_blank' rel='noreferrer'>
+						{SUBSTACK_LABEL}
+					</a>,
+					part,
+				],
+	);
+}
+
 function App() {
 	const [menuOpen, setMenuOpen] = useState(false);
 	const [lang, setLang] = useState<Lang>(() => (localStorage.getItem('lang') as Lang) || 'en');
@@ -224,7 +243,7 @@ function App() {
 										<br />
 									</>
 								)}
-								{paragraph}
+								{withSubstackLink(paragraph)}
 							</span>
 						))}
 					</p>
@@ -251,6 +270,16 @@ function App() {
 						))}
 					</div>
 				</section>
+
+				<section className='container section'>
+					<h2>{t.languages.heading}</h2>
+
+					<div className='stack'>
+						{t.languages.items.map(item => (
+							<span key={item}>{item}</span>
+						))}
+					</div>
+				</section>
 			</main>
 
 			<footer id='contact'>
@@ -267,6 +296,9 @@ function App() {
 						</a>
 						<a href='https://www.linkedin.com/in/ana-gracia-20081930/' target='_blank' rel='noreferrer'>
 							LinkedIn
+						</a>
+						<a href='https://themisstery.substack.com/' target='_blank' rel='noreferrer'>
+							Substack
 						</a>
 					</div>
 				</div>

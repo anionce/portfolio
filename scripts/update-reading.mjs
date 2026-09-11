@@ -4,7 +4,6 @@ import path from 'node:path';
 
 const GOODREADS_USER_ID = '5126321';
 const RSS_URL = `https://www.goodreads.com/review/list_rss/${GOODREADS_USER_ID}?shelf=currently-reading`;
-const MAX_BOOKS = 2;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const contentPath = path.join(__dirname, '../src/content.ts');
@@ -19,14 +18,16 @@ async function fetchCurrentlyReading() {
 	}
 
 	const xml = await res.text();
-	const items = xml.split('<item>').slice(1);
+	const [firstItem] = xml.split('<item>').slice(1);
 
-	const titles = items
-		.map(item => item.match(/<title>([\s\S]*?)<\/title>/)?.[1]?.trim())
-		.filter(Boolean)
-		.slice(0, MAX_BOOKS);
+	if (!firstItem) return null;
 
-	return titles;
+	const title = firstItem.match(/<title>([\s\S]*?)<\/title>/)?.[1]?.trim();
+	const author = firstItem.match(/<author_name>([\s\S]*?)<\/author_name>/)?.[1]?.trim();
+
+	if (!title) return null;
+
+	return author ? `${title} · ${author}` : title;
 }
 
 function quoteJs(value) {
@@ -50,11 +51,11 @@ function updateContentFile(readingValue) {
 	return true;
 }
 
-const titles = await fetchCurrentlyReading();
+const reading = await fetchCurrentlyReading();
 
-if (titles.length === 0) {
+if (!reading) {
 	console.log('No books on the currently-reading shelf — leaving readingValue untouched.');
 	process.exit(0);
 }
 
-updateContentFile(titles.join(' · '));
+updateContentFile(reading);

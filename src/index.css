@@ -547,6 +547,17 @@ nav a:hover {
 	font-size: 1.15rem;
 }
 
+.substack-link {
+	color: var(--primary);
+	font-style: italic;
+	font-weight: 600;
+	transition: var(--transition);
+}
+
+.substack-link:hover {
+	color: var(--primary-hover);
+}
+
 /* ---------------- EXPERIENCE ---------------- */
 
 .experience {
@@ -588,6 +599,7 @@ nav a:hover {
 	background: #fff4f6;
 	color: var(--primary);
 	border: 1px solid #ffdbe4;
+	cursor: pointer;
 
 	font-size: 0.9rem;
 	transition: var(--transition);
