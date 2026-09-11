@@ -176,7 +176,7 @@ export const content: Record<Lang, Content> = {
 				role: 'Product Engineer',
 				location: 'Ubicación',
 				locationValue: 'Barcelona 🇪🇸',
-				building: 'Construyendo ahora',
+				building: 'Creando',
 				buildingValue: 'Next Chapter',
 				reading: 'Leyendo',
 				readingValue: 'Whistler · Ann Patchett',
@@ -262,7 +262,7 @@ export const content: Record<Lang, Content> = {
 				role: 'Product Engineer',
 				location: 'Ubicació',
 				locationValue: 'Barcelona 🇪🇸',
-				building: 'Construint ara',
+				building: 'Creant',
 				buildingValue: 'Next Chapter',
 				reading: 'Llegint',
 				readingValue: 'Whistler · Ann Patchett',
@@ -310,7 +310,7 @@ export const content: Record<Lang, Content> = {
 			paragraphs: [
 				"Sóc Product Engineer i m'apassiona construir productes que resolguin problemes reals. Participo en tot el cicle de vida del producte: des d'entendre les necessitats dels usuaris i desenvolupar noves funcionalitats fins a revisar codi, validar releases i donar suport a producció. Vaig començar en frontend, però gràcies a les eines d'IA ara treballo en projectes fullstack, i he descobert com m'agrada crear projectes complets.",
 
-				"El que més em motiva és crear programari útil, fàcil de mantenir i agradable d'utilitzar, treballant molt a prop de Producte i Disseny per trobar la solució més senzilla que aporti valor real. També m'apassiona automatitzar tasques repetitives: he creat eines internes i fluxos de treball amb IA perquè l'equip es pugui centrar en el que realment importa.",
+				"El que més em motiva és crear apps útils, fàcils de mantenir i agradables d'utilitzar, treballant molt a prop de Producte i Disseny per trobar la solució més senzilla que aporti valor real. També m'apassiona automatitzar tasques repetitives: he creat eines internes i fluxos de treball amb IA perquè l'equip es pugui centrar en el que realment importa.",
 				"Fora de la feina, m'encanta llegir, el cinema, les sèries, el brodat i la moda. També tinc la meva pròpia newsletter a Substack, the misstery diaries. Sóc organitzada, treballo bé en equip i em considero eficient.",
 			],
 		},
