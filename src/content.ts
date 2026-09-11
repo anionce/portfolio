@@ -138,7 +138,7 @@ export const content: Record<Lang, Content> = {
 			paragraphs: [
 				"I'm a Product Engineer who's passionate about building products that solve real problems. I like being involved end to end: understanding what users actually need, shipping new features, and staying close to the codebase through code reviews, releases and production support. I started out on the frontend, but AI tools have opened the door to full-stack work, and I've discovered how much I love building complete products from start to finish.",
 				"What drives me is creating software that's useful, maintainable and pleasant to use, working closely with Product and Design to find the simplest solution that delivers real value. I'm also big on automating repetitive work: I've built internal tools and AI-assisted workflows to help the team focus on what actually matters.",
-				"Outside of work, I love reading, films, TV series, embroidery and fashion. I also write a newsletter on Substack, the misstery diaries. I'm organized, a strong team player, and efficient in how I work.",
+				"Outside of work, I love reading, films, TV series, embroidery and fashion. I also write a newsletter on Substack, the misstery diaries. I'm organized, a strong team player, and I consider myself efficient.",
 			],
 		},
 		experience: {
@@ -222,9 +222,9 @@ export const content: Record<Lang, Content> = {
 		about: {
 			heading: 'Sobre mí',
 			paragraphs: [
-				'Soy Product Engineer y me apasiona construir productos que resuelvan problemas reales. Me gusta estar implicada de principio a fin: entender lo que necesitan los usuarios, sacar adelante nuevas funcionalidades y mantenerme cerca del código a través de revisiones, releases y soporte en producción. Empecé como frontend, pero gracias a las herramientas de IA ahora trabajo en proyectos fullstack, y he descubierto lo mucho que me gusta crear proyectos completos de cabo a rabo.',
+				'Soy Product Engineer y me apasiona construir productos que resuelvan problemas reales. Me gusta estar implicada de principio a fin: entender lo que necesitan los usuarios, sacar adelante nuevas funcionalidades y mantenerme cerca del código a través de revisiones, releases y soporte en producción. Empecé como frontend, pero gracias a las herramientas de IA ahora trabajo en proyectos fullstack, y he descubierto lo mucho que me gusta crear proyectos completos.',
 				'Lo que más me motiva es crear software útil, mantenible y agradable de usar, colaborando de cerca con Producto y Diseño para encontrar la solución más simple que aporte valor real. También me apasiona automatizar tareas repetitivas: he creado herramientas internas y flujos de trabajo con IA para que el equipo se centre en lo que realmente importa.',
-				'Fuera del trabajo, me encanta leer, el cine, las series, el bordado y la moda. También tengo mi propia newsletter en Substack, the misstery diaries. Soy organizada, trabajo bien en equipo y soy eficiente en lo que hago.',
+				'Fuera del trabajo, me encanta leer, el cine, las series, el bordado y la moda. También tengo mi propia newsletter en Substack, the misstery diaries. Soy organizada, trabajo bien en equipo y me considero eficiente.',
 			],
 		},
 		experience: {
@@ -308,10 +308,10 @@ export const content: Record<Lang, Content> = {
 		about: {
 			heading: 'Sobre mi',
 			paragraphs: [
-				"Sóc Product Engineer i m'apassiona construir productes que resolguin problemes reals. Participo en tot el cicle de vida del producte: des d'entendre les necessitats dels usuaris i desenvolupar noves funcionalitats fins a revisar codi, validar releases i donar suport a producció. Vaig començar en frontend, però gràcies a les eines d'IA ara treballo en projectes fullstack, i he descobert com m'agrada crear projectes complets de cap a cap.",
+				"Sóc Product Engineer i m'apassiona construir productes que resolguin problemes reals. Participo en tot el cicle de vida del producte: des d'entendre les necessitats dels usuaris i desenvolupar noves funcionalitats fins a revisar codi, validar releases i donar suport a producció. Vaig començar en frontend, però gràcies a les eines d'IA ara treballo en projectes fullstack, i he descobert com m'agrada crear projectes complets.",
 
 				"El que més em motiva és crear programari útil, mantenible i agradable d'utilitzar, treballant molt a prop de Producte i Disseny per trobar la solució més senzilla que aporti valor real. També m'apassiona automatitzar tasques repetitives: he creat eines internes i fluxos de treball amb IA perquè l'equip es pugui centrar en el que realment importa.",
-				"Fora de la feina, m'encanta llegir, el cinema, les sèries, el brodat i la moda. També tinc la meva pròpia newsletter a Substack, the misstery diaries. Sóc organitzada, treballo bé en equip i sóc eficient en el que faig.",
+				"Fora de la feina, m'encanta llegir, el cinema, les sèries, el brodat i la moda. També tinc la meva pròpia newsletter a Substack, the misstery diaries. Sóc organitzada, treballo bé en equip i em considero eficient.",
 			],
 		},
 		experience: {

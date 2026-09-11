@@ -8,6 +8,12 @@ const RSS_URL = `https://www.goodreads.com/review/list_rss/${GOODREADS_USER_ID}?
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const contentPath = path.join(__dirname, '../src/content.ts');
 
+function stripCdata(value) {
+	if (!value) return value;
+	const match = value.trim().match(/^<!\[CDATA\[([\s\S]*)\]\]>$/);
+	return (match ? match[1] : value).trim();
+}
+
 async function fetchCurrentlyReading() {
 	const res = await fetch(RSS_URL, {
 		headers: { 'User-Agent': 'Mozilla/5.0 (portfolio-reading-sync)' },
@@ -22,8 +28,8 @@ async function fetchCurrentlyReading() {
 
 	if (!firstItem) return null;
 
-	const title = firstItem.match(/<title>([\s\S]*?)<\/title>/)?.[1]?.trim();
-	const author = firstItem.match(/<author_name>([\s\S]*?)<\/author_name>/)?.[1]?.trim();
+	const title = stripCdata(firstItem.match(/<title>([\s\S]*?)<\/title>/)?.[1]);
+	const author = stripCdata(firstItem.match(/<author_name>([\s\S]*?)<\/author_name>/)?.[1]);
 
 	if (!title) return null;
 
