@@ -223,7 +223,7 @@ export const content: Record<Lang, Content> = {
 			heading: 'Sobre mí',
 			paragraphs: [
 				'Soy Product Engineer y me apasiona construir productos que resuelvan problemas reales. Me gusta estar implicada de principio a fin: entender lo que necesitan los usuarios, sacar adelante nuevas funcionalidades y mantenerme cerca del código a través de revisiones, releases y soporte en producción. Empecé como frontend, pero gracias a las herramientas de IA ahora trabajo en proyectos fullstack, y he descubierto lo mucho que me gusta crear proyectos completos.',
-				'Lo que más me motiva es crear software útil, mantenible y agradable de usar, colaborando de cerca con Producto y Diseño para encontrar la solución más simple que aporte valor real. También me apasiona automatizar tareas repetitivas: he creado herramientas internas y flujos de trabajo con IA para que el equipo se centre en lo que realmente importa.',
+				'Lo que más me motiva es crear software útil, fácil de mantener y agradable de usar, colaborando de cerca con Producto y Diseño para encontrar la solución más simple que aporte valor real. También me apasiona automatizar tareas repetitivas: he creado herramientas internas y flujos de trabajo con IA para que el equipo se centre en lo que realmente importa.',
 				'Fuera del trabajo, me encanta leer, el cine, las series, el bordado y la moda. También tengo mi propia newsletter en Substack, the misstery diaries. Soy organizada, trabajo bien en equipo y me considero eficiente.',
 			],
 		},
@@ -310,7 +310,7 @@ export const content: Record<Lang, Content> = {
 			paragraphs: [
 				"Sóc Product Engineer i m'apassiona construir productes que resolguin problemes reals. Participo en tot el cicle de vida del producte: des d'entendre les necessitats dels usuaris i desenvolupar noves funcionalitats fins a revisar codi, validar releases i donar suport a producció. Vaig començar en frontend, però gràcies a les eines d'IA ara treballo en projectes fullstack, i he descobert com m'agrada crear projectes complets.",
 
-				"El que més em motiva és crear programari útil, mantenible i agradable d'utilitzar, treballant molt a prop de Producte i Disseny per trobar la solució més senzilla que aporti valor real. També m'apassiona automatitzar tasques repetitives: he creat eines internes i fluxos de treball amb IA perquè l'equip es pugui centrar en el que realment importa.",
+				"El que més em motiva és crear programari útil, fàcil de mantenir i agradable d'utilitzar, treballant molt a prop de Producte i Disseny per trobar la solució més senzilla que aporti valor real. També m'apassiona automatitzar tasques repetitives: he creat eines internes i fluxos de treball amb IA perquè l'equip es pugui centrar en el que realment importa.",
 				"Fora de la feina, m'encanta llegir, el cinema, les sèries, el brodat i la moda. També tinc la meva pròpia newsletter a Substack, the misstery diaries. Sóc organitzada, treballo bé en equip i em considero eficient.",
 			],
 		},
