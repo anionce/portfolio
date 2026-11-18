@@ -3,33 +3,41 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const GOODREADS_USER_ID = '5126321';
-const RSS_URL = `https://www.goodreads.com/review/list_rss/${GOODREADS_USER_ID}?shelf=currently-reading`;
+const PROFILE_URL = `https://www.goodreads.com/user/show/${GOODREADS_USER_ID}`;
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const contentPath = path.join(__dirname, '../src/content.ts');
 
-function stripCdata(value) {
-	if (!value) return value;
-	const match = value.trim().match(/^<!\[CDATA\[([\s\S]*)\]\]>$/);
-	return (match ? match[1] : value).trim();
+const ENTITIES = { '&amp;': '&', '&lt;': '<', '&gt;': '>', '&quot;': '"', '&#39;': "'", '&apos;': "'" };
+
+function clean(value) {
+	if (!value) return null;
+	const text = value
+		.replace(/<[^>]*>/g, '')
+		.replace(/&(amp|lt|gt|quot|apos|#39);/g, match => ENTITIES[match])
+		.replace(/\s+/g, ' ')
+		.trim();
+	return text || null;
 }
 
 async function fetchCurrentlyReading() {
-	const res = await fetch(RSS_URL, {
+	const res = await fetch(PROFILE_URL, {
 		headers: { 'User-Agent': 'Mozilla/5.0 (portfolio-reading-sync)' },
+		redirect: 'follow',
 	});
 
 	if (!res.ok) {
-		throw new Error(`Goodreads RSS request failed: ${res.status}`);
+		throw new Error(`Goodreads profile request failed: ${res.status}`);
 	}
 
-	const xml = await res.text();
-	const [firstItem] = xml.split('<item>').slice(1);
+	const html = await res.text();
+	const marker = html.indexOf('id="currentlyReadingReviews"');
 
-	if (!firstItem) return null;
+	if (marker === -1) return null;
 
-	const title = stripCdata(firstItem.match(/<title>([\s\S]*?)<\/title>/)?.[1]);
-	const author = stripCdata(firstItem.match(/<author_name>([\s\S]*?)<\/author_name>/)?.[1]);
+	const section = html.slice(marker);
+	const title = clean(section.match(/class="bookTitle"[^>]*>([\s\S]*?)<\/a>/)?.[1]);
+	const author = clean(section.match(/class="authorName"[^>]*>([\s\S]*?)<\/a>/)?.[1]);
 
 	if (!title) return null;
 

@@ -560,9 +560,13 @@ nav a:hover {
 
 /* ---------------- EXPERIENCE ---------------- */
 
-.experience {
+.experience-list {
+	display: grid;
+	gap: 1.25rem;
 	max-width: 760px;
+}
 
+.experience {
 	background: white;
 	border: 1px solid var(--border);
 	border-radius: var(--radius);
@@ -582,6 +586,16 @@ nav a:hover {
 
 .experience p {
 	margin-top: 1rem;
+}
+
+.experience ul {
+	margin: 1rem 0 0;
+	padding-left: 1.2rem;
+	color: var(--text-light);
+}
+
+.experience li + li {
+	margin-top: 0.4rem;
 }
 
 /* ---------------- STACK ---------------- */

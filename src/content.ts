@@ -1,7 +1,6 @@
 import calaImage from './assets/projects/cala.png';
 import movieQuestImage from './assets/projects/movie-quest.png';
 import filmRouletteImage from './assets/projects/film-roulette.png';
-import nextChapterImage from './assets/projects/next-chapter.png';
 
 export type Lang = 'en' | 'es' | 'ca';
 
@@ -20,6 +19,14 @@ interface Project {
 	image: string;
 }
 
+interface ExperienceItem {
+	role: string;
+	company: string;
+	period: string;
+	summary?: string;
+	bullets?: string[];
+}
+
 interface Content {
 	nav: {
 		projects: string;
@@ -36,8 +43,6 @@ interface Content {
 			role: string;
 			location: string;
 			locationValue: string;
-			building: string;
-			buildingValue: string;
 			reading: string;
 			readingValue: string;
 			stack: string;
@@ -56,9 +61,7 @@ interface Content {
 	};
 	experience: {
 		heading: string;
-		role: string;
-		meta: string;
-		description: string;
+		items: ExperienceItem[];
 	};
 	stack: {
 		heading: string;
@@ -90,10 +93,8 @@ export const content: Record<Lang, Content> = {
 				role: 'Product Engineer',
 				location: 'Location',
 				locationValue: 'Barcelona 🇪🇸',
-				building: 'Currently building',
-				buildingValue: 'Next Chapter',
 				reading: 'Reading',
-				readingValue: 'Whistler · Ann Patchett',
+				readingValue: 'North Woods · Daniel Mason',
 				stack: 'Stack',
 				stackValue: 'React · TypeScript',
 			},
@@ -124,13 +125,6 @@ export const content: Record<Lang, Content> = {
 					github: 'https://github.com/anionce/film-roulette',
 					image: filmRouletteImage,
 				},
-				{
-					title: 'Next Chapter',
-					description: 'Book recommendations tailored to your mood, genre, length and favorite themes.',
-					tech: ['React', 'TanStack Query', 'Tailwind CSS'],
-					github: 'https://github.com/anionce/next-chapter',
-					image: nextChapterImage,
-				},
 			],
 		},
 		about: {
@@ -138,15 +132,52 @@ export const content: Record<Lang, Content> = {
 			paragraphs: [
 				"I'm a Product Engineer who's passionate about building products that solve real problems. I like being involved end to end: understanding what users actually need, shipping new features, and staying close to the codebase through code reviews, releases and production support. I started out on the frontend, but AI tools have opened the door to full-stack work, and I've discovered how much I love building complete products from start to finish.",
 				"What drives me is creating software that's useful, maintainable and pleasant to use, working closely with Product and Design to find the simplest solution that delivers real value. I'm also big on automating repetitive work: I've built internal tools and AI-assisted workflows to help the team focus on what actually matters.",
-				"Outside of work, I love reading, films, TV series, embroidery and fashion. I also write a newsletter on Substack, the misstery diaries. I'm organized, a strong team player, and I consider myself efficient.",
+				"Outside of work, I love reading, films, TV series, fiber arts (sewing, crochet and embroidery) and fashion. I also write a newsletter on Substack, the misstery diaries. I'm organized, a strong team player, and I consider myself efficient.",
 			],
 		},
 		experience: {
 			heading: 'Experience',
-			role: 'Product Engineer',
-			meta: 'Signaturit · 2021–Present',
-			description:
-				'Day to day that means shipping features, reviewing pull requests, keeping releases smooth, and jumping in whenever production needs support.',
+			items: [
+				{
+					role: 'Product Engineer',
+					company: 'Signaturit Group',
+					period: '2022–Present',
+					summary:
+						"Product-minded engineer on Signaturit's e-signature platform, owning customer-facing features end to end.",
+					bullets: [
+						'Ship customer-facing features in React and TypeScript, from shaping requirements with Product and Design to release and post-launch support',
+						'Own quality in production: code reviews, QA validation, releases and incident investigation',
+						'Build internal tools, AI-assisted workflows and MCP servers that automate repetitive work for the team',
+						'Iterate on shipped features using feedback from customers, Support and teammates',
+					],
+				},
+				{
+					role: 'Technical Support Engineer',
+					company: 'Signaturit Group',
+					period: '2021–2022',
+					summary: 'Bridge between customers and engineering for the Signaturit product and API.',
+					bullets: [
+						'Level-2 support for the product and public API',
+						'Investigated issues across AWS, MySQL, Datadog and Sentry',
+						'Reproduced and documented bugs so engineering could fix them quickly',
+					],
+				},
+				{
+					role: 'Customer Support Team Lead',
+					company: 'Signaturit Group',
+					period: '2020–2022',
+					summary: 'Led the customer support team with a focus on automation and close collaboration with Tech.',
+					bullets: [
+						'Automated support workflows in Zendesk (macros, triggers, Answer Bot) to reduce manual work',
+						'Built reporting with SQL and Zendesk Explore to track performance and recurring product issues',
+						'Triaged and prioritised escalations together with engineering',
+						'Ran 1:1s, onboarding and training; owned internal and external documentation',
+					],
+				},
+				{ role: 'Customer Support Specialist', company: 'Signaturit Group', period: '2018–2020' },
+				{ role: 'Account Manager', company: 'Littio', period: '2016–2018' },
+				{ role: 'Content Editor & Translator', company: 'Appszoom', period: '2011–2016' },
+			],
 		},
 		stack: {
 			heading: 'Tech Stack',
@@ -176,10 +207,8 @@ export const content: Record<Lang, Content> = {
 				role: 'Product Engineer',
 				location: 'Ubicación',
 				locationValue: 'Barcelona 🇪🇸',
-				building: 'Creando',
-				buildingValue: 'Next Chapter',
 				reading: 'Leyendo',
-				readingValue: 'Whistler · Ann Patchett',
+				readingValue: 'North Woods · Daniel Mason',
 				stack: 'Stack',
 				stackValue: 'React · TypeScript',
 			},
@@ -210,13 +239,6 @@ export const content: Record<Lang, Content> = {
 					github: 'https://github.com/anionce/film-roulette',
 					image: filmRouletteImage,
 				},
-				{
-					title: 'Next Chapter',
-					description: 'Recibe recomendaciones de libros según tu estado de ánimo, género, duración y temática.',
-					tech: ['React', 'TanStack Query', 'Tailwind CSS'],
-					github: 'https://github.com/anionce/next-chapter',
-					image: nextChapterImage,
-				},
 			],
 		},
 		about: {
@@ -224,15 +246,53 @@ export const content: Record<Lang, Content> = {
 			paragraphs: [
 				'Soy Product Engineer y me apasiona crear productos que resuelvan problemas reales. Me gusta estar implicada de principio a fin: entender lo que necesitan los usuarios, sacar adelante nuevas funcionalidades y mantenerme cerca del código a través de revisiones, releases y soporte en producción. Empecé como frontend, pero gracias a las herramientas de IA ahora trabajo en proyectos fullstack, y he descubierto lo mucho que me gusta crear proyectos completos.',
 				'Lo que más me motiva es crear software útil, fácil de mantener y agradable de usar, colaborando de cerca con Producto y Diseño para encontrar la solución más simple que aporte valor real. También me apasiona automatizar tareas repetitivas: he creado herramientas internas y flujos de trabajo con IA para que el equipo se centre en lo que realmente importa.',
-				'Fuera del trabajo, me encanta leer, el cine, las series, el bordado y la moda. También tengo mi propia newsletter en Substack, the misstery diaries. Soy organizada, trabajo bien en equipo y me considero eficiente.',
+				'Fuera del trabajo, me encanta leer, el cine, las series, las artes textiles (costura, ganchillo y bordado) y la moda. También tengo mi propia newsletter en Substack, the misstery diaries. Soy organizada, trabajo bien en equipo y me considero eficiente.',
 			],
 		},
 		experience: {
 			heading: 'Experiencia',
-			role: 'Product Engineer',
-			meta: 'Signaturit · 2021 — Presente',
-			description:
-				'En el día a día eso significa sacar adelante nuevas funcionalidades, revisar pull requests, cuidar que los releases salgan bien y estar ahí cuando producción lo necesita.',
+			items: [
+				{
+					role: 'Product Engineer',
+					company: 'Signaturit Group',
+					period: '2022–Presente',
+					summary:
+						'Con mentalidad de producto, me encargo de funcionalidades de cara al cliente de principio a fin en la plataforma de firma electrónica de Signaturit.',
+					bullets: [
+						'Lanzo funcionalidades de cara al cliente con React y TypeScript, desde definir los requisitos con Producto y Diseño hasta la release y el soporte posterior',
+						'Me encargo de la calidad en producción: code reviews, validación de QA, releases e investigación de incidencias',
+						'Creo herramientas internas, flujos de trabajo con IA y servidores MCP que automatizan tareas repetitivas del equipo',
+						'Itero sobre las funcionalidades lanzadas a partir del feedback de clientes, Soporte y compañeros',
+					],
+				},
+				{
+					role: 'Technical Support Engineer',
+					company: 'Signaturit Group',
+					period: '2021–2022',
+					summary: 'Puente entre los clientes e ingeniería para el producto y la API de Signaturit.',
+					bullets: [
+						'Soporte de nivel 2 del producto y de la API pública',
+						'Investigué incidencias en AWS, MySQL, Datadog y Sentry',
+						'Reproduje y documenté bugs para que ingeniería pudiera corregirlos rápido',
+					],
+				},
+				{
+					role: 'Customer Support Team Lead',
+					company: 'Signaturit Group',
+					period: '2020–2022',
+					summary:
+						'Lideré el equipo de soporte al cliente, con foco en la automatización y en una colaboración estrecha con Tech.',
+					bullets: [
+						'Automaticé flujos de soporte en Zendesk (macros, triggers, Answer Bot) para reducir trabajo manual',
+						'Creé informes con SQL y Zendesk Explore para seguir el rendimiento y los problemas recurrentes del producto',
+						'Clasifiqué y prioricé escalados junto con ingeniería',
+						'Hice 1:1s, onboarding y formación, y me encargué de la documentación interna y externa',
+					],
+				},
+				{ role: 'Customer Support Specialist', company: 'Signaturit Group', period: '2018–2020' },
+				{ role: 'Account Manager', company: 'Littio', period: '2016–2018' },
+				{ role: 'Content Editor & Translator', company: 'Appszoom', period: '2011–2016' },
+			],
 		},
 		stack: {
 			heading: 'Stack Tecnológico',
@@ -262,10 +322,8 @@ export const content: Record<Lang, Content> = {
 				role: 'Product Engineer',
 				location: 'Ubicació',
 				locationValue: 'Barcelona 🇪🇸',
-				building: 'Creant',
-				buildingValue: 'Next Chapter',
 				reading: 'Llegint',
-				readingValue: 'Whistler · Ann Patchett',
+				readingValue: 'North Woods · Daniel Mason',
 				stack: 'Stack',
 				stackValue: 'React · TypeScript',
 			},
@@ -296,13 +354,6 @@ export const content: Record<Lang, Content> = {
 					github: 'https://github.com/anionce/film-roulette',
 					image: filmRouletteImage,
 				},
-				{
-					title: 'Next Chapter',
-					description: "Rep recomanacions de llibres segons el teu estat d'ànim, gènere, durada i temàtica.",
-					tech: ['React', 'TanStack Query', 'Tailwind CSS'],
-					github: 'https://github.com/anionce/next-chapter',
-					image: nextChapterImage,
-				},
 			],
 		},
 		about: {
@@ -311,15 +362,53 @@ export const content: Record<Lang, Content> = {
 				"Sóc Product Engineer i m'apassiona crear productes que resolguin problemes reals. Participo en tot el cicle de vida del producte: des d'entendre les necessitats dels usuaris i desenvolupar noves funcionalitats fins a revisar codi, validar releases i donar suport a producció. Vaig començar en frontend, però gràcies a les eines d'IA ara treballo en projectes fullstack, i he descobert com m'agrada crear projectes complets.",
 
 				"El que més em motiva és crear apps útils, fàcils de mantenir i agradables d'utilitzar, treballant molt a prop de Producte i Disseny per trobar la solució més senzilla que aporti valor real. També m'apassiona automatitzar tasques repetitives: he creat eines internes i fluxos de treball amb IA perquè l'equip es pugui centrar en el que realment importa.",
-				"Fora de la feina, m'encanta llegir, el cinema, les sèries, el brodat i la moda. També tinc la meva pròpia newsletter a Substack, the misstery diaries. Sóc organitzada, treballo bé en equip i em considero eficient.",
+				"Fora de la feina, m'encanta llegir, el cinema, les sèries, les arts tèxtils (costura, ganxet i brodat) i la moda. També tinc la meva pròpia newsletter a Substack, the misstery diaries. Sóc organitzada, treballo bé en equip i em considero eficient.",
 			],
 		},
 		experience: {
 			heading: 'Experiència',
-			role: 'Product Engineer',
-			meta: 'Signaturit · 2021 — Actualitat',
-			description:
-				"Desenvolupant noves funcionalitats, revisant pull requests, tenint cura que els releases surtin bé i sent-hi quan producció ho necessita.",
+			items: [
+				{
+					role: 'Product Engineer',
+					company: 'Signaturit Group',
+					period: '2022–Actualitat',
+					summary:
+						"Amb mentalitat de producte, m'encarrego de funcionalitats de cara al client de principi a fi a la plataforma de signatura electrònica de Signaturit.",
+					bullets: [
+						'Llanço funcionalitats de cara al client amb React i TypeScript, des de definir els requisits amb Producte i Disseny fins a la release i el suport posterior',
+						"Em responsabilitzo de la qualitat en producció: code reviews, validació de QA, releases i investigació d'incidències",
+						"Creo eines internes, fluxos de treball amb IA i servidors MCP que automatitzen tasques repetitives de l'equip",
+						'Itero sobre les funcionalitats llançades a partir del feedback de clients, Suport i companys',
+					],
+				},
+				{
+					role: 'Technical Support Engineer',
+					company: 'Signaturit Group',
+					period: '2021–2022',
+					summary: "Pont entre els clients i enginyeria per al producte i l'API de Signaturit.",
+					bullets: [
+						"Suport de nivell 2 del producte i de l'API pública",
+						'Vaig investigar incidències a AWS, MySQL, Datadog i Sentry',
+						'Vaig reproduir i documentar bugs perquè enginyeria els pogués corregir ràpidament',
+					],
+				},
+				{
+					role: 'Customer Support Team Lead',
+					company: 'Signaturit Group',
+					period: '2020–2022',
+					summary:
+						"Vaig liderar l'equip de suport al client, amb focus en l'automatització i en una col·laboració estreta amb Tech.",
+					bullets: [
+						'Vaig automatitzar fluxos de suport a Zendesk (macros, triggers, Answer Bot) per reduir feina manual',
+						'Vaig crear informes amb SQL i Zendesk Explore per seguir el rendiment i els problemes recurrents del producte',
+						'Vaig classificar i prioritzar escalats juntament amb enginyeria',
+						'Vaig fer 1:1s, onboarding i formació, i em vaig encarregar de la documentació interna i externa',
+					],
+				},
+				{ role: 'Customer Support Specialist', company: 'Signaturit Group', period: '2018–2020' },
+				{ role: 'Account Manager', company: 'Littio', period: '2016–2018' },
+				{ role: 'Content Editor & Translator', company: 'Appszoom', period: '2011–2016' },
+			],
 		},
 		stack: {
 			heading: 'Stack Tecnològic',
