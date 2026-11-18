@@ -174,6 +174,12 @@ function App() {
 							</div>
 
 							<div className='card-section'>
+								<small>{t.hero.card.building}</small>
+
+								<strong>{t.hero.card.buildingValue}</strong>
+							</div>
+
+							<div className='card-section'>
 								<small>{t.hero.card.reading}</small>
 
 								<strong>{t.hero.card.readingValue}</strong>

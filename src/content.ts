@@ -43,6 +43,8 @@ interface Content {
 			role: string;
 			location: string;
 			locationValue: string;
+			building: string;
+			buildingValue: string;
 			reading: string;
 			readingValue: string;
 			stack: string;
@@ -93,6 +95,8 @@ export const content: Record<Lang, Content> = {
 				role: 'Product Engineer',
 				location: 'Location',
 				locationValue: 'Barcelona 🇪🇸',
+				building: 'Currently building',
+				buildingValue: 'Jardín de papel',
 				reading: 'Reading',
 				readingValue: 'North Woods · Daniel Mason',
 				stack: 'Stack',
@@ -207,6 +211,8 @@ export const content: Record<Lang, Content> = {
 				role: 'Product Engineer',
 				location: 'Ubicación',
 				locationValue: 'Barcelona 🇪🇸',
+				building: 'Creando',
+				buildingValue: 'Jardín de papel',
 				reading: 'Leyendo',
 				readingValue: 'North Woods · Daniel Mason',
 				stack: 'Stack',
@@ -322,6 +328,8 @@ export const content: Record<Lang, Content> = {
 				role: 'Product Engineer',
 				location: 'Ubicació',
 				locationValue: 'Barcelona 🇪🇸',
+				building: 'Creant',
+				buildingValue: 'Jardín de papel',
 				reading: 'Llegint',
 				readingValue: 'North Woods · Daniel Mason',
 				stack: 'Stack',
