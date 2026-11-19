@@ -92,8 +92,6 @@ button {
 	margin: 0 auto;
 }
 
-/* ---------------- HEADER ---------------- */
-
 .header {
 	position: sticky;
 	top: 0;
@@ -228,8 +226,6 @@ nav a:hover {
 	color: var(--text);
 }
 
-/* ---------------- HERO ---------------- */
-
 .hero {
 	display: flex;
 	align-items: center;
@@ -289,7 +285,7 @@ nav a:hover {
 	margin-top: 36px;
 }
 
-.hero-buttons button,
+.hero-buttons .primary,
 .hero-buttons .secondary {
 	display: flex;
 	align-items: center;
@@ -308,7 +304,7 @@ nav a:hover {
 	transition: 0.25s;
 }
 
-.hero-buttons button {
+.hero-buttons .primary {
 	background: var(--primary);
 	color: white;
 	border: none;
@@ -316,7 +312,7 @@ nav a:hover {
 	box-shadow: 0 10px 25px rgba(165, 56, 96, 0.18);
 }
 
-.hero-buttons button:hover {
+.hero-buttons .primary:hover {
 	transform: translateY(-2px);
 	background: var(--primary-hover);
 }
@@ -449,8 +445,6 @@ nav a:hover {
 	}
 }
 
-/* ---------------- SECTIONS ---------------- */
-
 .section {
 	padding: 5rem 0;
 }
@@ -460,8 +454,6 @@ nav a:hover {
 	font-size: 2.2rem;
 	letter-spacing: -0.03em;
 }
-
-/* ---------------- PROJECTS ---------------- */
 
 .projects-grid {
 	display: grid;
@@ -480,7 +472,9 @@ nav a:hover {
 
 .card:hover {
 	transform: translateY(-8px);
-	box-shadow: 0 10px 20px rgba(165, 56, 96, 0.1), 0 30px 55px rgba(165, 56, 96, 0.14);
+	box-shadow:
+		0 10px 20px rgba(165, 56, 96, 0.1),
+		0 30px 55px rgba(165, 56, 96, 0.14);
 }
 
 .card-image {
@@ -539,12 +533,18 @@ nav a:hover {
 	color: var(--primary);
 }
 
-/* ---------------- ABOUT ---------------- */
-
 .about {
 	max-width: 700px;
 	color: var(--text-light);
 	font-size: 1.15rem;
+}
+
+.about p {
+	margin: 0;
+}
+
+.about p + p {
+	margin-top: 1lh;
 }
 
 .substack-link {
@@ -557,8 +557,6 @@ nav a:hover {
 .substack-link:hover {
 	color: var(--primary-hover);
 }
-
-/* ---------------- EXPERIENCE ---------------- */
 
 .experience-list {
 	display: grid;
@@ -598,8 +596,6 @@ nav a:hover {
 	margin-top: 0.4rem;
 }
 
-/* ---------------- STACK ---------------- */
-
 .stack {
 	display: flex;
 	flex-wrap: wrap;
@@ -623,8 +619,6 @@ nav a:hover {
 	transform: translateY(-3px);
 	box-shadow: 0 8px 18px rgba(165, 56, 96, 0.14);
 }
-
-/* ---------------- FOOTER ---------------- */
 
 footer {
 	margin-top: 6rem;
@@ -672,8 +666,6 @@ footer {
 	background: #fff4f7;
 }
 
-/* ---------------- SCROLLBAR ---------------- */
-
 ::-webkit-scrollbar {
 	width: 10px;
 }
@@ -690,8 +682,6 @@ footer {
 ::-webkit-scrollbar-thumb:hover {
 	background: #bcbcbc;
 }
-
-/* ---------------- RESPONSIVE ---------------- */
 
 @media (max-width: 900px) {
 	nav,
@@ -755,7 +745,7 @@ footer {
 		flex-direction: column;
 	}
 
-	.hero-buttons button,
+	.hero-buttons .primary,
 	.hero-buttons .secondary {
 		width: 100%;
 	}

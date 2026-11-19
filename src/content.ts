@@ -4,6 +4,26 @@ import filmRouletteImage from './assets/projects/film-roulette.png';
 
 export type Lang = 'en' | 'es' | 'ca';
 
+export const STACK = [
+	'React',
+	'TypeScript',
+	'Next.js',
+	'Redux Toolkit',
+	'Node.js',
+	'Supabase',
+	'MySQL',
+	'React Testing Library',
+	'Jest',
+	'Vitest',
+	'Cypress',
+	'Playwright',
+	'Docker',
+	'Netlify',
+	'Storybook',
+	'GitHub Actions',
+	'Figma',
+];
+
 export const languages: { code: Lang; label: string }[] = [
 	{ code: 'en', label: 'EN' },
 	{ code: 'es', label: 'ES' },
@@ -27,11 +47,12 @@ interface ExperienceItem {
 	bullets?: string[];
 }
 
-interface Content {
+export interface Content {
 	nav: {
 		projects: string;
 		about: string;
 		experience: string;
+		toggleMenu: string;
 	};
 	hero: {
 		eyebrow: string;
@@ -83,12 +104,13 @@ export const content: Record<Lang, Content> = {
 			projects: 'Projects',
 			about: 'About',
 			experience: 'Experience',
+			toggleMenu: 'Toggle menu',
 		},
 		hero: {
 			eyebrow: 'Product Engineer',
 			heading: ['Building apps', 'that are useful,', 'usable and beautiful.'],
 			paragraph:
-				"I care about the details: building features that work well and feel good to use, always with real users in mind.",
+				'I care about the details: building features that work well and feel good to use, always with real users in mind.',
 			viewProjects: 'View Projects',
 			githubCta: 'GitHub ↗',
 			card: {
@@ -199,6 +221,7 @@ export const content: Record<Lang, Content> = {
 			projects: 'Proyectos',
 			about: 'Sobre mí',
 			experience: 'Experiencia',
+			toggleMenu: 'Abrir o cerrar el menú',
 		},
 		hero: {
 			eyebrow: 'Product Engineer',
@@ -316,6 +339,7 @@ export const content: Record<Lang, Content> = {
 			projects: 'Projectes',
 			about: 'Sobre mi',
 			experience: 'Experiència',
+			toggleMenu: 'Obre o tanca el menú',
 		},
 		hero: {
 			eyebrow: 'Product Engineer',
