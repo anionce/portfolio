@@ -1,6 +1,7 @@
 import calaImage from './assets/projects/cala.png';
 import movieQuestImage from './assets/projects/movie-quest.png';
 import filmRouletteImage from './assets/projects/film-roulette.png';
+import jardinDePapelImage from './assets/projects/jardin-de-papel.png';
 
 export type Lang = 'en' | 'es' | 'ca';
 
@@ -151,6 +152,13 @@ export const content: Record<Lang, Content> = {
 					github: 'https://github.com/anionce/film-roulette',
 					image: filmRouletteImage,
 				},
+				{
+					title: 'Jardín de papel',
+					description: 'A home library for cataloguing, searching and sharing your books, with Goodreads import.',
+					tech: ['React', 'TypeScript', 'Firebase', 'Tailwind'],
+					github: 'https://github.com/anionce/jardin-de-papel',
+					image: jardinDePapelImage,
+				},
 			],
 		},
 		about: {
@@ -267,6 +275,13 @@ export const content: Record<Lang, Content> = {
 					tech: ['React', 'Redux Toolkit', 'MUI'],
 					github: 'https://github.com/anionce/film-roulette',
 					image: filmRouletteImage,
+				},
+				{
+					title: 'Jardín de papel',
+					description: 'Una biblioteca en casa para catalogar, buscar y compartir tus libros, con importación desde Goodreads.',
+					tech: ['React', 'TypeScript', 'Firebase', 'Tailwind'],
+					github: 'https://github.com/anionce/jardin-de-papel',
+					image: jardinDePapelImage,
 				},
 			],
 		},
@@ -385,6 +400,13 @@ export const content: Record<Lang, Content> = {
 					tech: ['React', 'Redux Toolkit', 'MUI'],
 					github: 'https://github.com/anionce/film-roulette',
 					image: filmRouletteImage,
+				},
+				{
+					title: 'Jardín de papel',
+					description: 'Una biblioteca a casa per catalogar, cercar i compartir els teus llibres, amb importació des de Goodreads.',
+					tech: ['React', 'TypeScript', 'Firebase', 'Tailwind'],
+					github: 'https://github.com/anionce/jardin-de-papel',
+					image: jardinDePapelImage,
 				},
 			],
 		},
